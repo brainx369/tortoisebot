@@ -37,7 +37,7 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```bash
 
 2.6. sudo apt update
-2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humblr-nav2-bringup ros-jazzy-rclpy
+2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy
 
         or
 
@@ -104,14 +104,14 @@ sudo apt install ros-jazzy-cv-bridge ros-humble-vision-msgs ros-jazzy-vision-ope
 
 ## 🧰 Install Colcon Build Tools
 ```bash
-sudo apt install python3-colcon-common-extensions
-sudo apt install python3-pip
-pip install -U colcon-common-extensions
+2.13. sudo apt install python3-colcon-common-extensions
+2.14. sudo apt install python3-pip
+2.15. pip install -U colcon-common-extensions
 ```
 ## ⚙️ Setup rosdep
 ```bash
-sudo apt install python3-rosdep2
-sudo rosdep init
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y
+2.16. sudo apt install python3-rosdep2
+2.17 .sudo rosdep init
+2.18 .rosdep update
+2.19 .rosdep install --from-paths src --ignore-src -r -y
 ```
