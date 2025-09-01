@@ -31,8 +31,8 @@ http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_COD
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 ```
-
-## 📦 Install ROS 2
+## Step-3 Ros Env bash setup
+```bash
 - for humble
 ```bash
 # Source environment
@@ -41,6 +41,18 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 # Add to bashrc
 2.7. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 2.8. source ~/.bashrc
+
+- for jazzy
+
+# Source environment
+source /opt/ros/jazzy/setup.bash
+
+# Add to bashrc
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+## Step-3 📦 Install ROS 2 Package
+
 
 # Install required software package based on your project and requirment
 2.9. sudo apt update
@@ -83,14 +95,7 @@ sudp apt install ros-humble-nav2-amcl
 2.13. sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
 
 ```
-- for jazzy
-```bash
-# Source environment
-source /opt/ros/jazzy/setup.bash
 
-# Add to bashrc
-echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-source ~/.bashrc
 
 # Install required software package based on your project and requirement 
 sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-ros2-control ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-topic-tools imagemagick ros-jazzy-robot-localization ros-jazzy-camera-calibration ros-jazzy-nav2-amcl
