@@ -36,11 +36,11 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 - for humble
 
 # Source environment
-2.6. source /opt/ros/humble/setup.bash
+3.1. source /opt/ros/humble/setup.bash
 
 # Add to bashrc
-2.7. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-2.8. source ~/.bashrc
+3.2. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+3.3. source ~/.bashrc
 
 - for jazzy
 
