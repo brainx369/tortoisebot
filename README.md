@@ -7,7 +7,7 @@
 
 ---
 
-## 🔧 Setting up Locales
+## Step-1 🔧 Setting up Locales
 
 ```bash
 sudo apt update && sudo apt install locales
@@ -16,7 +16,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
-## 🏗️ Add ROS 2 Repository
+## Step-2 🏗️ Add ROS 2 Repository
 
 ```bash
 sudo apt install software-properties-common
