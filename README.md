@@ -75,33 +75,6 @@ source ~/.bashrc
 sudo apt update
 sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
 
-        or
-
-sudo apt install ros-humble-desktop
-sudo apt install ros-humble-gazebo-ros
-sudo apt install ros-humble-joint-state-publisher 
-sudo apt install ros-humble-joint-state-publisher-gui
-sudo apt install ros-humble-robot-state-publisher 
-sudo apt install ros-humble-cartographer 
-sudo apt install ros-humble-cartographer-ros 
-sudo apt install ros-humble-gazebo-plugins 
-sudo apt install ros-humble-teleop-twist-keyboard  
-sudo apt install ros-humble-teleop-twist-joy 
-sudo apt install ros-humble-xacro 
-sudo apt install ros-humble-nav2* 
-sudo apt install ros-humble-urdf
-sudo apt install ros-humblr-nav2-bringup
-sudo apt install ros-humble-rclpy
-sudo apt install ros-humble-gazebo-ros-pkgs
-sudo apt install ros-humble-gazebo-ros2-control
-sudo apt install ros-humble-navigation2
-sudo apt install ros-humble-nav2-bringup
-sudo apt install ros-humble-topic-tools
-sudo apt install imagemagick
-sudo apt install ros-humble-robot-localization
-sudo apt install ros-humble-camera-calibration
-sudp apt install ros-humble-nav2-amcl
-
 # for openCV IMAGE processing
 sudo apt update
 sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
@@ -115,35 +88,6 @@ sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-
 ```bash
 # Install required software package based on your project and requirement 
 sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-ros2-control ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-topic-tools imagemagick ros-jazzy-robot-localization ros-jazzy-camera-calibration ros-jazzy-nav2-amcl
-
-       or
-
-sudo apt update
-sudo apt install ros-jazzy-desktop
-sudo apt install ros-jazzy-gazebo-ros
-sudo apt install ros-jazzy-joint-state-publisher 
-sudo apt install ros-jazzy-joint-state-publisher-gui
-sudo apt install ros-jazzy-robot-state-publisher 
-sudo apt install ros-jazzy-cartographer 
-sudo apt install ros-jazzy-cartographer-ros 
-sudo apt install ros-jazzy-gazebo-plugins 
-sudo apt install ros-jazzy-teleop-twist-keyboard  
-sudo apt install ros-jazzy-teleop-twist-joy 
-sudo apt install ros-jazzy-xacro 
-sudo apt install ros-jazzy-nav2* 
-sudo apt install ros-jazzy-urdf
-sudo apt install ros-jazzy-nav2-bringup
-sudo apt install ros-jazzy-rclpy
-sudo apt install ros-jazzy-gazebo-ros-pkgs
-sudo apt install ros-jazzy-gazebo-ros2-control
-sudo apt install ros-jazzy-navigation2
-sudo apt install ros-jazzy-nav2-bringup
-sudo apt install ros-jazzy-topic-tools
-sudo apt install imagemagick
-sudo apt install ros-jazzy-robot-localization
-sudo apt install ros-jazzy-camera-calibration
-sudp apt install ros-jazzy-nav2-amcl
-
 
 # for opencv
 sudo apt install ros-jazzy-cv-bridge ros-jazzy-vision-msgs ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-common tesseract-ocr libtesseract-dev
