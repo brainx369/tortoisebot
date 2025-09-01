@@ -30,10 +30,24 @@ export LANG=en_US.UTF-8
 http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | \
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-```
-## Step-3 ROS2 Environment bash setup
+## Step-3 🧰 Install Colcon Build Tools
 ```bash
-- for humble
+sudo apt install python3-colcon-common-extensions
+sudo apt install python3-pip
+pip install -U colcon-common-extensions
+```
+## Step-4 ⚙️ Setup rosdep
+```bash
+sudo apt install python3-rosdep2
+sudo rosdep init
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+```
+## Step-5 ROS2 Environment bash setup
+```bash
+- For humble
 
 # Source environment
 3.1. source /opt/ros/humble/setup.bash
@@ -42,7 +56,7 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 3.2. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 3.3. source ~/.bashrc
 
-- for jazzy
+- For jazzy
 
 # Source environment
 source /opt/ros/jazzy/setup.bash
@@ -51,12 +65,16 @@ source /opt/ros/jazzy/setup.bash
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
-## Step-3 📦 Install ROS 2 Package
 
 
+
+
+## Step-6 📦 Install ROS 2 Package
+```bash
+- For humble
 # Install required software package based on your project and requirment
-2.9. sudo apt update
-2.10. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
+4.1. sudo apt update
+4.2. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
 
         or
 
@@ -86,16 +104,15 @@ sudo apt install ros-humble-camera-calibration
 sudp apt install ros-humble-nav2-amcl
 
 # for openCV IMAGE processing
-2.11. sudo apt update
-2.12. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
+4.3. sudo apt update
+4.4. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
       2.12.1. pip3 install pytesseract
 
 
 # for camera and image utility
-2.13. sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
+4.5. sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
 
-```
-
+- For jazzy
 
 # Install required software package based on your project and requirement 
 sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-ros2-control ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-topic-tools imagemagick ros-jazzy-robot-localization ros-jazzy-camera-calibration ros-jazzy-nav2-amcl
@@ -137,16 +154,4 @@ pip3 install pytesseract
 sudo apt install libraspberrypi-bin v4l-utils ros-jazzy-v4l2-camera ros-jazzy-image-transport-plugins ros-jazzy-camera-calibration ros-jazzy-rqt-image-view ros-jazzy-image-view ros-jazzy-web-video-server
 ```
 
-## 🧰 Install Colcon Build Tools
-```bash
-2.14. sudo apt install python3-colcon-common-extensions
-2.15. sudo apt install python3-pip
-2.16. pip install -U colcon-common-extensions
-```
-## ⚙️ Setup rosdep
-```bash
-2.17. sudo apt install python3-rosdep2
-2.18 .sudo rosdep init
-2.19 .rosdep update
-2.20 .rosdep install --from-paths src --ignore-src -r -y
-```
+
