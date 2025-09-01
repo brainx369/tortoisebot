@@ -35,9 +35,16 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ## 📦 Install ROS 2
 - for humble
 ```bash
+# Source environment
+2.6. source /opt/ros/humble/setup.bash
 
-2.6. sudo apt update
-2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
+# Add to bashrc
+2.7. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+2.8. source ~/.bashrc
+
+# Install required software package based on your project and requirment
+2.9. sudo apt update
+2.10. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
 
         or
 
@@ -66,14 +73,6 @@ sudo apt install ros-humble-robot-localization
 sudo apt install ros-humble-camera-calibration
 sudp apt install ros-humble-nav2-amcl
 
-
-# Source environment
-2.8. source /opt/ros/humble/setup.bash
-
-# Add to bashrc
-2.9. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-2.10. source ~/.bashrc
-
 # for openCV IMAGE processing
 2.11. sudo apt update
 2.12. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
@@ -86,6 +85,14 @@ sudp apt install ros-humble-nav2-amcl
 ```
 - for jazzy
 ```bash
+# Source environment
+source /opt/ros/jazzy/setup.bash
+
+# Add to bashrc
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+# Install required software package based on your project and requirement 
 sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-ros2-control ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-topic-tools imagemagick ros-jazzy-robot-localization ros-jazzy-camera-calibration ros-jazzy-nav2-amcl
 
        or
@@ -116,12 +123,6 @@ sudo apt install ros-jazzy-robot-localization
 sudo apt install ros-jazzy-camera-calibration
 sudp apt install ros-jazzy-nav2-amcl
 
-# Source environment
-source /opt/ros/jazzy/setup.bash
-
-# Add to bashrc
-echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-source ~/.bashrc
 
 # for opencv
 sudo apt install ros-jazzy-cv-bridge ros-jazzy-vision-msgs ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-common tesseract-ocr libtesseract-dev
