@@ -34,6 +34,7 @@ sudo apt update
 ```
 
 ## 📦 Install ROS 2
+- for humble
 ```bash
 sudo apt install ros-humble-desktop
 
@@ -44,7 +45,7 @@ source /opt/ros/humble/setup.bash
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
-
+- for jazzy
 ```bash
 sudo apt install ros-jazzy-desktop
 
