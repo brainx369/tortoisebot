@@ -59,6 +59,9 @@ source /opt/ros/humble/setup.bash
 # Add to bashrc
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+- for openCV IMAGE processing
+sudo apt update
+sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs
 ```
 - for jazzy
 ```bash
