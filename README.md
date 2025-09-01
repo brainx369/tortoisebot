@@ -98,13 +98,24 @@ pip3 install pytesseract
 
 ```
 ## Step-7 📦 Create Workspace
+- For Humble
 ```bash
 # create the work space directory and src folder under that clone the repo and performe below task
 vboxuser@ubuntu-22:~$ mkdir -p humble_ws/src                                               
 vboxuser@ubuntu-22:~$ cd humble_ws/src 
-vboxuser@ubuntu-22:~/humble_ws/src$ 
+vboxuser@ubuntu-22:~/humble_ws/src$
+boxuser@ubuntu-22:~/humble_ws/src$ git clone -b ros2-humble https://github.com/rigbetellabs/tortoisebot.git
 vboxuser@ubuntu-22:~/humble_ws$ colcon build
 vboxuser@ubuntu-22:~/humble_ws$ source install/setup.bash
 ```
-
+- For Jazzy
+```bash
+# create the work space directory and src folder under that clone the repo and performe below task
+vboxuser@ubuntu-22:~$ mkdir -p jazzy_ws/src                                               
+vboxuser@ubuntu-22:~$ cd jazzy_ws/src 
+vboxuser@ubuntu-22:~/jazzy_ws/src$
+boxuser@ubuntu-22:~/jazzy_ws/src$ git clone -b ros2-jazzy https://github.com/rigbetellabs/tortoisebot.git
+vboxuser@ubuntu-22:~/jazzy_ws$ colcon build
+vboxuser@ubuntu-22:~/jazzy_ws$ source install/setup.bash
+```
 
