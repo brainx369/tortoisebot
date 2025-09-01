@@ -30,5 +30,19 @@ source ~/.bashrc
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc #for jazzy
 source ~/.bashrc
 
+COLCON
+.............................................................
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+sudo apt install python3-pip
+pip install -U colcon-common-extensions
+
+Destro UPDATE
+.........................................................
+sudo apt install python3-rosdep2
+sudo rosdep init
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+
 
 
