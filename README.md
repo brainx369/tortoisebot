@@ -19,14 +19,14 @@ export LANG=en_US.UTF-8
 ## Step-2 🏗️ Add ROS 2 Repository
 
 ```bash
-2.1 sudo apt install software-properties-common
-2.2 sudo add-apt-repository universe
+2.1. sudo apt install software-properties-common
+2.2. sudo add-apt-repository universe
 
-2.3 sudo apt update && sudo apt install curl gnupg lsb-release
+2.3. sudo apt update && sudo apt install curl gnupg lsb-release
 
-2.4 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+2.4. sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 
-2.5 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
+2.5. echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
 http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | \
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
@@ -36,8 +36,8 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 - for humble
 ```bash
 
-2.6 sudo apt update
-2.7 sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humblr-nav2-bringup ros-jazzy-rclpy
+2.6. sudo apt update
+2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humblr-nav2-bringup ros-jazzy-rclpy
 
         or
 
@@ -58,15 +58,15 @@ sudo apt install ros-humblr-nav2-bringup
 sudo apt install ros-humble-rclpy
 
 # Source environment
-2.8 source /opt/ros/humble/setup.bash
+2.8. source /opt/ros/humble/setup.bash
 
 # Add to bashrc
-2.9 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-2.10 source ~/.bashrc
+2.9. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+2.10. source ~/.bashrc
 
 # for openCV IMAGE processing
-2.11 sudo apt update
-2.12 sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv
+2.11. sudo apt update
+2.12. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv
 ```
 - for jazzy
 ```bash
