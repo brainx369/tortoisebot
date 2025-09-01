@@ -37,7 +37,7 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```bash
 
 2.6. sudo apt update
-2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy
+2.7. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
 
         or
 
@@ -56,6 +56,16 @@ sudo apt install ros-humble-nav2*
 sudo apt install ros-humble-urdf
 sudo apt install ros-humblr-nav2-bringup
 sudo apt install ros-humble-rclpy
+sudo apt install ros-humble-gazebo-ros-pkgs
+sudo apt install ros-humble-gazebo-ros2-control
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+sudo apt install ros-humble-topic-tools
+sudo apt install imagemagick
+sudo apt install ros-humble-robot-localization
+sudo apt install ros-humble-camera-calibration
+sudp apt install ros-humble-nav2-amcl
+
 
 # Source environment
 2.8. source /opt/ros/humble/setup.bash
@@ -66,11 +76,17 @@ sudo apt install ros-humble-rclpy
 
 # for openCV IMAGE processing
 2.11. sudo apt update
-2.12. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv
+2.12. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
+      2.12.1. pip3 install pytesseract
+
+
+# for camera and image utility
+2.13. sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
+
 ```
 - for jazzy
 ```bash
-sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy
+sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy ros-jazzy-gazebo-ros-pkgs ros-jazzy-gazebo-ros2-control ros-jazzy-navigation2 ros-jazzy-nav2-bringup ros-jazzy-topic-tools imagemagick ros-jazzy-robot-localization ros-jazzy-camera-calibration ros-jazzy-nav2-amcl
 
        or
 
@@ -90,6 +106,15 @@ sudo apt install ros-jazzy-nav2*
 sudo apt install ros-jazzy-urdf
 sudo apt install ros-jazzy-nav2-bringup
 sudo apt install ros-jazzy-rclpy
+sudo apt install ros-jazzy-gazebo-ros-pkgs
+sudo apt install ros-jazzy-gazebo-ros2-control
+sudo apt install ros-jazzy-navigation2
+sudo apt install ros-jazzy-nav2-bringup
+sudo apt install ros-jazzy-topic-tools
+sudo apt install imagemagick
+sudo apt install ros-jazzy-robot-localization
+sudo apt install ros-jazzy-camera-calibration
+sudp apt install ros-jazzy-nav2-amcl
 
 # Source environment
 source /opt/ros/jazzy/setup.bash
@@ -99,19 +124,23 @@ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # for opencv
-sudo apt install ros-jazzy-cv-bridge ros-humble-vision-msgs ros-jazzy-vision-opencv
+sudo apt install ros-jazzy-cv-bridge ros-humble-vision-msgs ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-common tesseract-ocr libtesseract-dev
+      2.12.1. pip3 install pytesseract
+
+# for camera and image
+sudo apt install libraspberrypi-bin v4l-utils ros-jazzy-v4l2-camera ros-jazzy-image-transport-plugins ros-jazzy-camera-calibration ros-jazzy-rqt-image-view ros-jazzy-image-view ros-jazzy-web-video-server
 ```
 
 ## 🧰 Install Colcon Build Tools
 ```bash
-2.13. sudo apt install python3-colcon-common-extensions
-2.14. sudo apt install python3-pip
-2.15. pip install -U colcon-common-extensions
+2.14. sudo apt install python3-colcon-common-extensions
+2.15. sudo apt install python3-pip
+2.16. pip install -U colcon-common-extensions
 ```
 ## ⚙️ Setup rosdep
 ```bash
-2.16. sudo apt install python3-rosdep2
-2.17 .sudo rosdep init
-2.18 .rosdep update
-2.19 .rosdep install --from-paths src --ignore-src -r -y
+2.17. sudo apt install python3-rosdep2
+2.18 .sudo rosdep init
+2.19 .rosdep update
+2.20 .rosdep install --from-paths src --ignore-src -r -y
 ```
