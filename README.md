@@ -29,7 +29,7 @@ export LANG=en_US.UTF-8
 2.5. echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
 http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | \
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-
+```
 ## Step-3 🧰 Install Colcon Build Tools
 ```bash
 sudo apt install python3-colcon-common-extensions
@@ -44,7 +44,6 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
 
-```
 ## Step-5 ROS2 Environment bash setup
 ```bash
 - For humble
