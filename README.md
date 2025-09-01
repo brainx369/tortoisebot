@@ -117,12 +117,13 @@ vboxuser@ubuntu-22:~/jazzy_ws/src$ git clone -b ros2-jazzy https://github.com/ri
 vboxuser@ubuntu-22:~/jazzy_ws$ colcon build
 vboxuser@ubuntu-22:~/jazzy_ws$ source install/setup.bash
 ```
-## Step-8 📦 Run the final command 
+## Step-8 📦 Run the final command For simulation
 - For simulation
 ```bash
 vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=True exploration:=True
 ```
-- For real robot
+## Step-8 📦 Run the final command For Real Robot
+
 ```bash
 vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=False exploration:=True
 ```
