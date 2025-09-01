@@ -45,18 +45,17 @@ rosdep install --from-paths src --ignore-src -r -y
 ```
 
 ## Step-5 ROS2 Environment bash setup
-```bash
 - For humble
-
+```bash
 # Source environment
 source /opt/ros/humble/setup.bash
 
 # Add to bashrc
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
+```
 - For jazzy
-
+```bash
 # Source environment
 source /opt/ros/jazzy/setup.bash
 
