@@ -124,8 +124,8 @@ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # for opencv
-sudo apt install ros-jazzy-cv-bridge ros-humble-vision-msgs ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-common tesseract-ocr libtesseract-dev
-      2.12.1. pip3 install pytesseract
+sudo apt install ros-jazzy-cv-bridge ros-jazzy-vision-msgs ros-jazzy-vision-opencv python3-opencv libopencv-dev ros-jazzy-image-common tesseract-ocr libtesseract-dev
+pip3 install pytesseract
 
 # for camera and image
 sudo apt install libraspberrypi-bin v4l-utils ros-jazzy-v4l2-camera ros-jazzy-image-transport-plugins ros-jazzy-camera-calibration ros-jazzy-rqt-image-view ros-jazzy-image-view ros-jazzy-web-video-server
