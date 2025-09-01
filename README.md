@@ -15,7 +15,10 @@ sudo locale-gen en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+
 ## 🏗️ Add ROS 2 Repository
+
+```bash
 sudo apt install software-properties-common
 sudo add-apt-repository universe
 
