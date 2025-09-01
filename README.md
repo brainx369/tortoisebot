@@ -119,10 +119,10 @@ vboxuser@ubuntu-22:~/jazzy_ws$ source install/setup.bash
 ```
 ## Step-8 📦 Run the final command for running application in simulation or real robot
 - For simulation
-  ```bash
+```bash
 vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=True exploration:=True
 ```
 - For real robot
-  ```bash
+```bash
 vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=False exploration:=True
 ```
