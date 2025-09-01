@@ -59,4 +59,14 @@ source ~/.bashrc
 
 ## 🧰 Install Colcon Build Tools
 
+sudo apt install python3-colcon-common-extensions
+sudo apt install python3-pip
+pip install -U colcon-common-extensions
 
+## ⚙️ Setup rosdep
+sudo apt install python3-rosdep2
+sudo rosdep init
+rosdep update
+
+# Run this inside your ROS workspace
+rosdep install --from-paths src --ignore-src -r -y
