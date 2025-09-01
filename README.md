@@ -14,7 +14,7 @@ sudo apt update && sudo apt install locales
 sudo locale-gen en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
-
+```
 
 ## 🏗️ Add ROS 2 Repository
 
@@ -31,7 +31,7 @@ http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_COD
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 sudo apt update
-
+```
 
 
 
