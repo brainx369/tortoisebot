@@ -36,7 +36,12 @@ sudo apt update
 ## 📦 Install ROS 2
 - for humble
 ```bash
+
 sudo apt update
+sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humblr-nav2-bringup ros-jazzy-rclpy
+
+        or
+
 sudo apt install ros-humble-desktop
 sudo apt install ros-humble-gazebo-ros
 sudo apt install ros-humble-joint-state-publisher 
@@ -50,8 +55,8 @@ sudo apt install ros-humble-teleop-twist-joy
 sudo apt install ros-humble-xacro 
 sudo apt install ros-humble-nav2* 
 sudo apt install ros-humble-urdf
-        or
-sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf
+sudo apt install ros-humblr-nav2-bringup
+sudo apt install ros-humble-rclpy
 
 # Source environment
 source /opt/ros/humble/setup.bash
@@ -59,13 +64,17 @@ source /opt/ros/humble/setup.bash
 # Add to bashrc
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-- for openCV IMAGE processing
+
+# for openCV IMAGE processing
 sudo apt update
-sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs
+sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv
 ```
 - for jazzy
 ```bash
-sudo apt install ros-jazzy-desktop
+sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf ros-jazzy-nav2-bringup ros-jazzy-rclpy
+
+       or
+
 sudo apt update
 sudo apt install ros-jazzy-desktop
 sudo apt install ros-jazzy-gazebo-ros
@@ -80,8 +89,8 @@ sudo apt install ros-jazzy-teleop-twist-joy
 sudo apt install ros-jazzy-xacro 
 sudo apt install ros-jazzy-nav2* 
 sudo apt install ros-jazzy-urdf
-       or
-sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf
+sudo apt install ros-jazzy-nav2-bringup
+sudo apt install ros-jazzy-rclpy
 
 # Source environment
 source /opt/ros/jazzy/setup.bash
@@ -89,6 +98,9 @@ source /opt/ros/jazzy/setup.bash
 # Add to bashrc
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+# for opencv
+sudo apt install ros-jazzy-cv-bridge ros-humble-vision-msgs ros-jazzy-vision-opencv
 ```
 
 ## 🧰 Install Colcon Build Tools
