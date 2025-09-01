@@ -68,8 +68,5 @@ pip install -U colcon-common-extensions
 sudo apt install python3-rosdep2
 sudo rosdep init
 rosdep update
-```
-# Run this inside your ROS workspace
-```bash
 rosdep install --from-paths src --ignore-src -r -y
 ```
