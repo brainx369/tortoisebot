@@ -49,11 +49,11 @@ rosdep install --from-paths src --ignore-src -r -y
 - For humble
 
 # Source environment
-3.1. source /opt/ros/humble/setup.bash
+source /opt/ros/humble/setup.bash
 
 # Add to bashrc
-3.2. echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-3.3. source ~/.bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 
 - For jazzy
 
@@ -72,8 +72,8 @@ source ~/.bashrc
 ```bash
 - For humble
 # Install required software package based on your project and requirment
-4.1. sudo apt update
-4.2. sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
+sudo apt update
+sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf ros-humble-nav2-bringup ros-humble-rclpy ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros2-control ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-topic-tools imagemagick ros-humble-robot-localization ros-humble-camera-calibration ros-humble-nav2-amcl
 
         or
 
@@ -103,13 +103,13 @@ sudo apt install ros-humble-camera-calibration
 sudp apt install ros-humble-nav2-amcl
 
 # for openCV IMAGE processing
-4.3. sudo apt update
-4.4. sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
-      2.12.1. pip3 install pytesseract
+sudo apt update
+sudo apt install ros-humble-cv-bridge ros-humble-vision-msgs ros-humble-vision-opencv python3-opencv libopencv-dev ros-humble-image-common tesseract-ocr libtesseract-dev
+pip3 install pytesseract
 
 
 # for camera and image utility
-4.5. sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
+sudo apt install libraspberrypi-bin v4l-utils ros-humble-v4l2-camera ros-humble-image-transport-plugins ros-humble-camera-calibration ros-humble-rqt-image-view ros-humble-image-view ros-humble-web-video-server
 
 - For jazzy
 
