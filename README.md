@@ -127,3 +127,12 @@ vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launc
 ```bash
 vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=False exploration:=True
 ```
+## Step-9 Run the below command when you want to add and create your own package or node in ros2
+```bash
+vboxuser@ubuntu-22:~$ mkdir -p my_ws/src                                               
+vboxuser@ubuntu-22:~$ cd my_ws/src 
+vboxuser@ubuntu-22:~/my_ws/src$
+vboxuser@ubuntu-22:~/my_ws/src$ ros2 pkg create simple_pkg
+vboxuser@ubuntu-22:~/my_ws$ colcon build
+vboxuser@ubuntu-22:~/my_ws$ source install/setup.bash
+```
