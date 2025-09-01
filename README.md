@@ -36,7 +36,22 @@ sudo apt update
 ## 📦 Install ROS 2
 - for humble
 ```bash
+sudo apt update
 sudo apt install ros-humble-desktop
+sudo apt install ros-humble-gazebo-ros
+sudo apt install ros-humble-joint-state-publisher 
+sudo apt install ros-humble-joint-state-publisher-gui
+sudo apt install ros-humble-robot-state-publisher 
+sudo apt install ros-humble-cartographer 
+sudo apt install ros-humble-cartographer-ros 
+sudo apt install ros-humble-gazebo-plugins 
+sudo apt install ros-humble-teleop-twist-keyboard  
+sudo apt install ros-humble-teleop-twist-joy 
+sudo apt install ros-humble-xacro 
+sudo apt install ros-humble-nav2* 
+sudo apt install ros-humble-urdf
+        or
+sudo apt install ros-humble-desktop ros-humble-gazebo-ros ros-humble-joint-state-publisher ros-humble-joint-state-publisher-gui ros-humble-robot-state-publisher ros-humble-cartographer ros-humble-cartographer-ros ros-humble-gazebo-plugins ros-humble-teleop-twist-keyboard ros-humble-teleop-twist-joy ros-humble-xacro sudo ros-humble-nav2* ros-humble-urdf
 
 # Source environment
 source /opt/ros/humble/setup.bash
@@ -48,6 +63,22 @@ source ~/.bashrc
 - for jazzy
 ```bash
 sudo apt install ros-jazzy-desktop
+sudo apt update
+sudo apt install ros-jazzy-desktop
+sudo apt install ros-jazzy-gazebo-ros
+sudo apt install ros-jazzy-joint-state-publisher 
+sudo apt install ros-jazzy-joint-state-publisher-gui
+sudo apt install ros-jazzy-robot-state-publisher 
+sudo apt install ros-jazzy-cartographer 
+sudo apt install ros-jazzy-cartographer-ros 
+sudo apt install ros-jazzy-gazebo-plugins 
+sudo apt install ros-jazzy-teleop-twist-keyboard  
+sudo apt install ros-jazzy-teleop-twist-joy 
+sudo apt install ros-jazzy-xacro 
+sudo apt install ros-jazzy-nav2* 
+sudo apt install ros-jazzy-urdf
+       or
+sudo apt install ros-jazzy-desktop ros-jazzy-gazebo-ros ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui ros-jazzy-robot-state-publisher ros-jazzy-cartographer ros-jazzy-cartographer-ros ros-jazzy-gazebo-plugins ros-jazzy-teleop-twist-keyboard ros-jazzy-teleop-twist-joy ros-jazzy-xacro ros-jazzy-nav2* ros-jazzy-urdf
 
 # Source environment
 source /opt/ros/jazzy/setup.bash
