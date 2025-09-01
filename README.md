@@ -114,8 +114,16 @@ vboxuser@ubuntu-22:~/humble_ws$ source install/setup.bash
 vboxuser@ubuntu-22:~$ mkdir -p jazzy_ws/src                                               
 vboxuser@ubuntu-22:~$ cd jazzy_ws/src 
 vboxuser@ubuntu-22:~/jazzy_ws/src$
-boxuser@ubuntu-22:~/jazzy_ws/src$ git clone -b ros2-jazzy https://github.com/rigbetellabs/tortoisebot.git
+vboxuser@ubuntu-22:~/jazzy_ws/src$ git clone -b ros2-jazzy https://github.com/rigbetellabs/tortoisebot.git
 vboxuser@ubuntu-22:~/jazzy_ws$ colcon build
 vboxuser@ubuntu-22:~/jazzy_ws$ source install/setup.bash
 ```
-
+## Step-8 📦 Run the final command for running application in simulation or real robot
+- For simulation
+  ```bash
+vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=True exploration:=True
+```
+- For real robot
+  ```bash
+vboxuser@ubuntu-22:~/jazzy_ws$ ros2 launch tortoisebot_bringup autobringup.launch.py use_sim_time:=False exploration:=True
+```
