@@ -31,10 +31,10 @@ http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_COD
 sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 ```
-## Step-3 Ros Env bash setup
+## Step-3 ROS2 Environment bash setup
 ```bash
 - for humble
-```bash
+
 # Source environment
 2.6. source /opt/ros/humble/setup.bash
 
@@ -50,7 +50,7 @@ source /opt/ros/jazzy/setup.bash
 # Add to bashrc
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
+```
 ## Step-3 📦 Install ROS 2 Package
 
 
