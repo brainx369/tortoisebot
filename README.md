@@ -30,12 +30,5 @@ source ~/.bashrc
 echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc #for jazzy
 source ~/.bashrc
 
-ros2 run demo_nodes_cpp talker
-ros2 run demo_nodes_py listener
 
-ros2 multicast receive
-ros2 multicast send
-
-sudo ufw allow in proto udp to 224.0.0.0/4
-sudo ufw allow in proto udp from 224.0.0.0/4
 
