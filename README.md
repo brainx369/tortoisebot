@@ -136,4 +136,4 @@ vboxuser@ubuntu-22:~/my_ws/src$ ros2 pkg create simple_pkg
 vboxuser@ubuntu-22:~/my_ws$ colcon build
 vboxuser@ubuntu-22:~/my_ws$ source install/setup.bash
 ```
- kustipro@MacBook-Pro  ~/humble_ws 
+
