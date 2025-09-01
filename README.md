@@ -33,6 +33,29 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 ```
 
+## 📦 Install ROS 2
+```bash
+sudo apt install ros-humble-desktop
 
+# Source environment
+source /opt/ros/humble/setup.bash
+
+# Add to bashrc
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+```bash
+sudo apt install ros-jazzy-desktop
+
+# Source environment
+source /opt/ros/jazzy/setup.bash
+
+# Add to bashrc
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+## 🧰 Install Colcon Build Tools
 
 
