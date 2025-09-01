@@ -97,5 +97,14 @@ sudo apt install ros-jazzy-cv-bridge ros-jazzy-vision-msgs ros-jazzy-vision-open
 pip3 install pytesseract
 
 ```
+## Step-7 📦 Create Workspace
+```bash
+# create the work space directory and src folder under that clone the repo and performe below task
+vboxuser@ubuntu-22:~$ mkdir -p humble_ws/src                                               
+vboxuser@ubuntu-22:~$ cd humble_ws/src 
+vboxuser@ubuntu-22:~/humble_ws/src$ 
+vboxuser@ubuntu-22:~/humble_ws$ colcon build
+vboxuser@ubuntu-22:~/humble_ws$ source install/setup.bash
+```
 
 
