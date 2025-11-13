@@ -35,14 +35,18 @@ sudo apt install python3-colcon-common-extensions
 sudo apt install python3-pip
 pip install -U colcon-common-extensions
 ```
-## Step-4 ⚙️ Setup rosdep
+## Step-4.1 ⚙️ Setup rosdep
 ```bash
 sudo apt install python3-rosdep2
 sudo rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
-
+## Step-4.2 install humble desktop
+```bash
+sudo apt update
+sudo apt install ros-humble-desktop -y
+```
 ## Step-5 ROS2 Environment bash setup
 - For HUMBLE
 ```bash
